@@ -1,0 +1,5 @@
+ru:
+  site_settings:
+    discourse_youtrack_enabled: "Включить плагин discourse-youtrack"
+    discourse_youtrack_base_url: "Базовый URL YouTrack (например https://youtrack.example.com)"
+    discourse_youtrack_api_token: "Постоянный токен YouTrack (Bearer)"

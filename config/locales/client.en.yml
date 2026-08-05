@@ -1,0 +1,9 @@
+en:
+  js:
+    discourse_youtrack:
+      sync_checkbox: "Add comment to YouTrack"
+      sync_checkbox_help: "Post this reply as a comment on the linked YouTrack issue"
+      sync_not_available: "YouTrack issue not found in the first post of this topic"
+      sync_error_issue_not_found: "Not sent to YouTrack: issue not found"
+      sync_error_auth_failed: "Not sent to YouTrack: no permission to comment"
+      sync_error_upstream: "Not sent to YouTrack: service error, try again later"

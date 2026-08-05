@@ -1,0 +1,5 @@
+en:
+  site_settings:
+    discourse_youtrack_enabled: "Enable discourse-youtrack plugin"
+    discourse_youtrack_base_url: "YouTrack base URL (e.g. https://youtrack.example.com)"
+    discourse_youtrack_api_token: "YouTrack permanent token (Bearer)"

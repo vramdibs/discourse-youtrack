@@ -1,0 +1,9 @@
+ru:
+  js:
+    discourse_youtrack:
+      sync_checkbox: "Добавить комментарий в YouTrack"
+      sync_checkbox_help: "Отправить этот ответ комментарием в связанную задачу YouTrack"
+      sync_not_available: "В первом сообщении темы не найдена задача YouTrack"
+      sync_error_issue_not_found: "Не отправлено в YouTrack: задача не найдена"
+      sync_error_auth_failed: "Не отправлено в YouTrack: нет прав на комментарий"
+      sync_error_upstream: "Не отправлено в YouTrack: ошибка сервиса, попробуйте позже"

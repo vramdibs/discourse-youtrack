@@ -1,0 +1,6 @@
+node_modules
+.discourse-site
+.eslintcache
+.cursor/
+*.swp
+.DS_Store

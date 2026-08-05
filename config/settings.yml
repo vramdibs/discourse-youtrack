@@ -1,0 +1,11 @@
+plugins:
+  discourse_youtrack_enabled:
+    default: false
+    client: true
+  discourse_youtrack_base_url:
+    default: ""
+    client: false
+  discourse_youtrack_api_token:
+    default: ""
+    secret: true
+    client: false

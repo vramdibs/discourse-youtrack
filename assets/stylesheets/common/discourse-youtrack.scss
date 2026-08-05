@@ -1,0 +1,8 @@
+.discourse-youtrack-sync {
+  margin-top: 0.5em;
+
+  &.discourse-youtrack-sync--muted {
+    color: var(--primary-medium);
+    font-size: var(--font-down-1);
+  }
+}
