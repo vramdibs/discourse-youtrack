@@ -29,5 +29,14 @@
     "yarn": "please-use-pnpm",
     "pnpm": "^10"
   },
-  "packageManager": "pnpm@10.28.0"
+  "packageManager": "pnpm@10.28.0",
+  "pnpm": {
+    "overrides": {
+      "file-entry-cache": "11.1.5",
+      "flat-cache": "6.1.23",
+      "cacheable": "2.5.0",
+      "@cacheable/memory": "2.2.0",
+      "@cacheable/utils": "2.5.0"
+    }
+  }
 }

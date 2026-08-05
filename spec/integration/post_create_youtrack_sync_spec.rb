@@ -34,7 +34,7 @@ RSpec.describe "YouTrack post create hook" do
     post = creator.create
 
     expect(creator.errors).to be_empty
-    expect(post.custom_fields[DiscourseYoutrack::SYNC_REQUESTED_CF]).to be_truthy
+    expect(post.reload.custom_fields[DiscourseYoutrack::SYNC_REQUESTED_CF]).to be_truthy
     expect(post.custom_fields[DiscourseYoutrack::SYNC_STATUS_CF]).to eq("ok")
     expect(post.custom_fields[DiscourseYoutrack::COMMENT_ID_CF]).to eq("yt-comment-99")
   end
