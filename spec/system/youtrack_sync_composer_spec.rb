@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-RSpec.describe "YouTrack sync composer", type: :system, js: true do
-  fab!(:user) { Fabricate(:user) }
-  fab!(:topic) { Fabricate(:topic) }
+RSpec.describe "YouTrack sync composer" do
+  fab!(:user)
+  fab!(:topic)
   fab!(:first_post) do
     Fabricate(
       :post,
@@ -35,7 +35,7 @@ RSpec.describe "YouTrack sync composer", type: :system, js: true do
   end
 
   context "when the topic has no YouTrack link" do
-    fab!(:plain_topic) { Fabricate(:topic) }
+    fab!(:plain_topic, :topic)
     fab!(:plain_post) { Fabricate(:post, topic: plain_topic, post_number: 1) }
 
     it "shows a muted notice in the reply composer" do

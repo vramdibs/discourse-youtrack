@@ -3,7 +3,7 @@
 require "rails_helper"
 
 describe DiscourseYoutrack::IssueIdResolver do
-  fab!(:topic) { Fabricate(:topic) }
+  fab!(:topic)
   fab!(:first_post) { Fabricate(:post, topic: topic, post_number: 1) }
 
   before do

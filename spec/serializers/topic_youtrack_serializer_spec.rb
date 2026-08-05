@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-RSpec.describe "YouTrack topic serializers" do
-  fab!(:user) { Fabricate(:user) }
-  fab!(:topic) { Fabricate(:topic) }
+RSpec.describe TopicViewSerializer do
+  fab!(:user)
+  fab!(:topic)
   fab!(:first_post) do
     Fabricate(
       :post,
@@ -25,6 +25,26 @@ RSpec.describe "YouTrack topic serializers" do
       TopicViewSerializer.new(topic_view, scope: Guardian.new(user), root: false).as_json
 
     expect(json[:discourse_youtrack_issue_id]).to eq("TDOT-437")
+  end
+end
+
+RSpec.describe TopicListItemSerializer do
+  fab!(:user)
+  fab!(:topic)
+  fab!(:first_post) do
+    Fabricate(
+      :post,
+      topic: topic,
+      post_number: 1,
+      cooked: '<a href="https://youtrack.example.com/issue/TDOT-437">TDOT-437</a>',
+    )
+  end
+
+  before do
+    enable_current_plugin
+    SiteSetting.discourse_youtrack_enabled = true
+    SiteSetting.discourse_youtrack_base_url = "https://youtrack.example.com"
+    SiteSetting.discourse_youtrack_api_token = "test-token"
   end
 
   it "includes cached issue id on topic list item serializer" do

@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
 RSpec.describe Jobs::SyncPostToYoutrack do
-  fab!(:user) { Fabricate(:user) }
-  fab!(:topic) { Fabricate(:topic) }
+  fab!(:user)
+  fab!(:topic)
   fab!(:first_post) do
     Fabricate(
       :post,
